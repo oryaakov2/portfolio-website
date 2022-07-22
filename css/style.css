@@ -385,7 +385,7 @@ footer {
 
 /* Form Style */
 
-.contact-form {
+#contact-form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

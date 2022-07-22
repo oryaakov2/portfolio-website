@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/061a95072e.js" crossorigin="anonymous"></script>
-    <title>Or Yaakov | Frontend Developer</title>
+    <title>Or Yaakov | Full Stack Developer</title>
 </head>
 
 <body>
@@ -39,8 +39,8 @@
         </div>
         <div class="hero-content">
             <h1>I Am Or Yaakov, <span class="auto-input"></h1>
-            <p>Looking for a new job as Web Developer.</p>
-            <a class="btn" href="./assets/cv/Or_Yaakov Frontend-CV.pdf" download>Download My CV</a>
+            <p>Looking for a new job as Full Stack Developer.</p>
+            <a class="btn" href="./assets/cv/OrYaakov_CV.pdf" download>Download My CV</a>
         </div>
     </header>
     <main>
@@ -137,16 +137,16 @@
         </section>
         <section id="contact">
             <div id="contact-container">
-                <form class="contact-form box-shadow">
+                <form id="contact-form">
                     <div class="form-title">
                         <h2>Contact <span class="text-primary">Me</span></h2>
                     </div>
                     <div class="form-group">
-                        <input class="box-shadow" id="name" type="text" name="name" placeholder="Name" required autocomplete="off">
-                        <input class="box-shadow" id="email" type="email" name="email" placeholder="Email" required autocomplete="off">
+                        <input class="box-shadow" id="name" type="text" name="name" placeholder="Name" autocomplete="off">
+                        <input class="box-shadow" id="email" type="text" name="email" placeholder="Email" autocomplete="off">
                     </div>
-                    <input class="box-shadow" id="subject" type="text" name="subject" placeholder="Subject" required autocomplete="off">
-                    <textarea class="box-shadow" name="message" id="message" cols="8" rows="8" placeholder="Write message here..." required></textarea>
+                    <input class="box-shadow" id="subject" type="text" name="subject" placeholder="Subject" autocomplete="off">
+                    <textarea class="box-shadow" name="message" id="message" cols="8" rows="8" placeholder="Write message here..."></textarea>
                     <button class="btn-primary box-shadow" type="submit">Send</button>
                 </form>
                 <div id="contact-info">
@@ -177,13 +177,6 @@
                         <p>054-7477745</p>
                         <p>Jerusalem, Israel</p>
                     </div>
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54263.668619344055!2d35.32322490708929!3d31.78468521826962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1siw!2sil!4v1653039511437!5m2!1siw!2sil" 
-                        width="100%"
-                        height="450px"
-                        style="border:0; grid-column: span 2; padding: 15px"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
                 </div>
             </div>
         </section>
@@ -204,8 +197,12 @@
         <p>All Rights Reserved</p>
     </footer>
 
+    <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      emailjs.init('g7BPdkxnCvdART9UK')
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="./js/main.js"></script>
     <script>
         var typed = new Typed(".auto-input", {
             strings: ["Java Developer", "Web Developer"],
